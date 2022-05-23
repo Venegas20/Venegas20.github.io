@@ -1,0 +1,59 @@
+:root {
+    --colorprimario: #18d26e;
+    --colorsegundario: #1a1919;
+}
+
+@media screen and (min-width: 412px) and (max-width: 915px) {
+    header {
+        width: 100%;
+    }
+    .inicio {
+        display: none;
+    }
+    .mobil {
+        background-color: var(--colorsegundario);
+    }
+    .navbar-nav a:hover {
+        color: var(--colorprimario);
+    }
+    .mobile .navbar-brand {
+        color: #18d26e;
+        font-weight: 700;
+        font-size: 1.6rem;
+    }
+    .mobile-item span {
+        color: #18d26e;
+        border-bottom: 2px solid #18d26e;
+    }
+    .mobile-item {
+        font-size: 2.5rem;
+        position: relative;
+        top: 15rem;
+        margin: auto;
+    }
+    .mobile-item h2 {
+        font-size: 2.4rem;
+    }
+    .redes-sociales a:hover {
+        color: #18d26e;
+    }
+    .sobre_mi-inicio .sobre_mi {
+        width: 100%;
+    }
+    .sobre_mi p {
+        padding: 0;
+        margin: 0px;
+    }
+    .proyect .p-2 {
+        text-align: center;
+        position: relative;
+        top: -20px;
+    }
+    .proyect .bx {
+        text-align: center;
+        background-color: #1a1919;
+        border-radius: 50%;
+        padding: 10px;
+        color: #18d26e;
+    }
+}

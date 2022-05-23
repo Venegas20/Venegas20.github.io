@@ -1,0 +1,189 @@
+    * {
+        font-family: sans-serif;
+    }
+    
+     :root {
+        --colorprimario: #18d26e;
+        --colorsegundario: #404040;
+    }
+    
+    header {
+        background: linear-gradient(#000000b0, #0000009d), url("../img/fondo6.jpg") top right no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    
+    .inicio {
+        transition: ease-in-out 0.3s;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .inicio span {
+        color: var(--colorprimario);
+        border-bottom: 2px solid var(--colorprimario);
+        border-top: 2px solid var(--colorprimario);
+    }
+    
+    .inicio ul a:hover {
+        color: var(--colorprimario);
+        border-radius: 15px;
+        border-bottom: 2px solid var(--colorprimario);
+    }
+    
+    .proyect .p-2 {
+        text-align: center;
+        position: relative;
+        top: -25px;
+    }
+    
+    .proyect .bx {
+        text-align: center;
+        background-color: #1a1919;
+        border-radius: 50%;
+        padding: 10px;
+        color: #18d26e;
+    }
+    
+    .inicio ul a:focus {
+        background-color: black;
+        border-radius: 15px;
+        opacity: 75%;
+        color: var(--colorprimario);
+    }
+    
+    .navbar ul a {
+        color: #ffffff;
+    }
+    
+    .bx-chevrons-down {
+        color: var(--colorprimario);
+        font-size: 3.5rem;
+    }
+    
+    .redes-sociales a {
+        display: inline-block;
+        background-color: #262424;
+        padding: 10px;
+        color: #ffffff;
+        font-size: 1.3rem;
+        line-height: 1;
+    }
+    
+    .redes-sociales a:hover {
+        color: var(--colorprimario);
+        border: 1px solid var(--colorprimario);
+    }
+    
+    .sobre_mi p i {
+        padding: 0%;
+        margin: 0%;
+        position: relative;
+        color: #18d26e;
+        top: 8px;
+    }
+    
+    .portafolio img {
+        transition: ease-in-out 0.4s;
+        width: 550px;
+        margin: 10px;
+    }
+    
+    .portafolio img:hover {
+        transition: ease-in-out 0.4s;
+        box-shadow: 0px 5px 8px -4px #ffffff;
+    }
+    
+    .portafolio img {
+        transition: ease-in-out 0.4s;
+        width: 390px;
+        margin: 8px;
+        border-radius: 5px;
+    }
+    
+    .habilidad h4 {
+        color: var(--colorprimario);
+    }
+    
+    .html {
+        color: #c45901;
+    }
+    
+    .css {
+        color: #0255ca;
+    }
+    
+    .javascript {
+        color: #e3c905;
+    }
+    
+    .bootstrap {
+        color: #2e025a;
+    }
+    
+    .php {
+        color: #3e02a4;
+    }
+    
+    .h3 {
+        width: 15%;
+        border-bottom: 3px solid var(--colorprimario);
+    }
+    
+    .portafolio {
+        color: var(--colorprimario);
+    }
+    
+    .row,
+    h4,
+    p {
+        color: #b8b7b7;
+    }
+    
+    .contacto i {
+        border-radius: 50%;
+        background-color: #262424;
+        color: var(--colorprimario);
+        font-size: 1.4rem;
+        transition: ease-in-out 0.4s;
+    }
+    
+    .social-links i {
+        color: #ffffff;
+        font-size: 1.4rem;
+    }
+    
+    .social-links i:hover {
+        color: var(--colorprimario);
+    }
+    
+    form input,
+    textarea {
+        color: #ffffff !important;
+        transition: ease-in-out 0.4s;
+        outline: none !important;
+        border: none !important;
+        border-bottom: 3px solid #18d26e !important;
+    }
+    
+    button {
+        background-color: var(--colorprimario) !important;
+    }
+    
+    .contactame {
+        background: var(--colorsegundario);
+    }
+    
+    .contactame span {
+        color: var(--colorprimario);
+    }
+    
+    footer i {
+        font-size: 1.4rem;
+        border-radius: 50%;
+        background-color: #262424;
+        padding: 10px;
+        color: #18d26e;
+    }
