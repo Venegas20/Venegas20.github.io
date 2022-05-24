@@ -3,7 +3,7 @@
     --colorsegundario: #1a1919;
 }
 
-@media screen and (min-width: 412px) and (max-width: 915px) {
+@media screen and (min-width: 320px) and (max-width: 915px) {
     header {
         width: 100%;
     }
