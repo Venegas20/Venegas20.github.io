@@ -15,6 +15,9 @@
   background-color: var(--color-dark);
   display: flex;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
 }
 .menu-toggle img {
   width: 35px;
@@ -62,65 +65,70 @@
   border-bottom: 2px solid var(--color-white);
 }
 /*  =============================  */
-.main{
-  background-image:  url("../img/fondo-desktop.jpg");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-height: 100vh;
+.main {
+  background:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.887)),
+      url("../img/fondo.jpg");
 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 26%;
+
+  height: 100vh;
 }
-.main__content{
-      display: grid;
-    place-content: center;
-      place-items: center;
-      margin: 0px 10px;
-  
+.main__content {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  margin: 0px 10px;
 }
-.main__content .title{
+.main__content .title {
   font-family: var(--fontTitulos);
   font-size: 2.5rem;
   text-align: center;
   padding: 0;
   margin: 0;
   color: var(--color-white);
+  text-shadow: 2px 2px 3px #ff0066;
 }
-.main__content .main__content-p{
+.main__content .main__content-p {
   font-family: var(--fontText);
   font-weight: 600;
   margin: 20px 0;
-  font-size: 18px;
+  font-size: 1.4rem;
   color: var(--color-white);
+  text-shadow: 1px 1px 1px #18d26e;
 }
-.main__content .sub-titulo{
-  font-family: var(--fontText);
+.main__content .sub-titulo {
+  font-family: var(--fontTitulos);
   font-weight: 800;
-   font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
-  color: var(--color-white);
+  color:rgb(255, 255, 255);
+  text-shadow: 2px 2px 3px #ff0066;
   /* text-decoration: underline var(--color-dark); */
 }
-.content__img{
-   
+.content__img {
 }
-.content__img img{
-  width: 14rem ;
-    border-radius: 100%;
-    object-fit: cover;
+.content__img img {
+  width: 12rem;
+  border-radius: 100%;
+  object-fit: cover;
 }
-.main .mas{
-background-color: var(--color-principal);
-padding: 10px 20px;
-border-radius: 5px;
-font-family: var(--fontText);
-font-weight: 700;
-text-decoration: none;
-color: initial;
-font-size: 18px;
-margin: 20px 0;
+.main .mas {
+  background-color: var(--color-principal);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: var(--fontText);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: initial;
+  font-size: 1.4rem;
+  margin: 20px 0;
 }
-.mas:hover{
+.mas:hover {
   background-color: var(--color-dark);
   color: var(--color-white);
   transition: all 0.5s;
