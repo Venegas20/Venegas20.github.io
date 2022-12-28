@@ -67,6 +67,8 @@
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+background-attachment: fixed;
+height: 100vh;
 
 }
 .main__content{
@@ -78,10 +80,11 @@ background-size: cover;
 }
 .main__content .title{
   font-family: var(--fontTitulos);
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   text-align: center;
   padding: 0;
   margin: 0;
+  color: var(--color-white);
 }
 .main__content .main__content-p{
   font-family: var(--fontText);
@@ -93,9 +96,9 @@ background-size: cover;
 .main__content .sub-titulo{
   font-family: var(--fontText);
   font-weight: 800;
-  font-size: 2.2rem;
+   font-size: 1.8rem;
   text-align: center;
-  color: var(--color-principal);
+  color: var(--color-white);
   /* text-decoration: underline var(--color-dark); */
 }
 .content__img{
