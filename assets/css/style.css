@@ -9,9 +9,10 @@
   --color-dark: #252525;
   --fontTitulos: "Oswald", sans-serif;
   --fontText: "Inconsolata", monospace;
+  --menu: #0000006e;
 }
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.227), #000000),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.437), #000000d2),
     url("/assets/img/fondo-desktop.jpg");
   background-size: cover;
   background-position: center;
@@ -21,7 +22,7 @@ body {
 
 .menu {
   font-family: var(--fontTitulos);
-  background-color: var(--color-dark);
+  background-color: var(--menu);
   display: flex;
   align-items: center;
   position: fixed;
@@ -29,14 +30,18 @@ body {
   width: 100%;
   z-index: 1000;
 }
-.menu-toggle img {
-  width: 35px;
+.menu-toggle i {
+  color: var(--color-white);
+  font-size: 2rem;
 }
 .menu-toggle {
+  display: flex;
+  align-items: center;
   background-color: inherit;
   border: none;
   cursor: pointer;
   margin-right: 10px;
+  text-align: center;
 }
 .menu__titulo {
   font-size: 35px;
@@ -48,8 +53,8 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  flex-wrap: wrap;
   padding: 10px;
+  align-items: center;
 }
 .nav__collapse {
   width: 100%;
@@ -74,55 +79,40 @@ body {
   transition: all 0.3s;
   border-bottom: 2px solid var(--color-white);
 }
-/* 00000000000000000000000000000000 */
-.content__img {
-  position: relative;
-  padding-bottom: 8 0px;
-  margin-top: 100px;
-}
-.content__img .logos {
-  gap: 50px;
-}
-
-.uno {
+/* ========================== */
+.fa-html5 {
   position: absolute;
-  top: -60px;
+  top: -50px;
+  font-size: 3rem;
+  color: #d84924;
 }
-.dos {
+.fa-css3-alt {
   position: absolute;
-  right: -60px;
+  right: -50px;
+  color: #2449d8;
+  font-size: 3rem;
+  transform: rotate(90deg);
 }
-.tres {
+.fa-js {
   position: absolute;
-  left: -60px;
+  left: -52px;
+  color: #ead41c;
+  font-size: 3rem;
+  transform: rotate(-90deg);
 }
-.cuatro {
+.fa-bootstrap {
   position: absolute;
-  bottom: -60px;
-}
-.cinco {
-  position: absolute;
-  left: -50px;
-  bottom: -10px;
-}
-.seis {
-  position: absolute;
-  right: -35px;
-  bottom: -20px;
-}
-.siete {
-  position: absolute;
-  right: -30px;
-  top: -35px;
+  bottom: -50px;
+  color: #804bcd;
+  font-size: 3rem;
 }
 .girar {
   position: absolute;
   display: flex;
-
+  align-items: center;
   width: 100%;
   height: 100%;
   padding: 50px;
-  gap: 20px;
   animation-name: girar;
   animation-duration: 25s;
   animation-timing-function: linear;
@@ -136,13 +126,10 @@ body {
     transform: rotate(365deg);
   }
 }
-.girar .logos img {
-  width: 35px;
-  border-radius: 100%;
-}
+
 /*  =============================  */
 .main {
-  margin-top: 70px;
+  margin-top: 60px;
   width: 100%;
 }
 .main__content {
@@ -170,33 +157,54 @@ body {
 }
 .main__content .sub-titulo {
   font-family: var(--fontTitulos);
-  font-weight: 800;
+  font-weight: bold;
   font-size: 2rem;
   text-align: center;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 2px #ff0066;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 18ch;
+  animation: tipear 2s steps(18), caminar 0.5s step-end alternate;
   /* text-decoration: underline var(--color-dark); */
+  overflow: hidden;
 }
+@keyframes tipear {
+  from {
+    width: 0;
+  }
+}
+@keyframes caminar {
+  50% {
+    border: transparent;
+  }
+  100% {
+    border-right: red;
+  }
+}
+
 .content__img {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 60px;
 }
 .content__img img {
-  width: 10rem;
+  width: 12rem;
   border-radius: 100%;
   object-fit: cover;
 }
 .main .mas {
   background-color: var(--color-principal);
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-radius: 5px;
   font-family: var(--fontText);
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   color: initial;
-  font-size: 1.2rem;
- 
+  font-size: 1rem;
 }
 .mas:hover {
   background-color: var(--color-dark);
@@ -209,10 +217,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000000;
   width: 100%;
   bottom: 0%;
-  padding: 20px 0;
+  padding: 14px 0;
+  background-color: var(--menu);
 }
 footer div {
   font-family: var(--fontTitulos);
