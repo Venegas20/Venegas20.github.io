@@ -5,7 +5,7 @@
 }
 :root {
   --color-principal: #18d26e;
-  --color-white: #fff;
+  --color-white: #ededed;
   --color-dark: #252525;
   --fontTitulos: "Oswald", sans-serif;
   --fontText: "Inconsolata", monospace;
@@ -18,9 +18,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
-
 .menu {
   font-family: var(--fontTitulos);
   background-color: var(--menu);
@@ -31,18 +29,8 @@ body {
   width: 100%;
   z-index: 1000;
 }
-.menu-toggle i {
-  color: var(--color-white);
-  font-size: 2rem;
-}
 .menu-toggle {
-  display: flex;
-  align-items: center;
-  background-color: inherit;
-  border: none;
-  cursor: pointer;
-  margin-right: 10px;
-  text-align: center;
+  display: none;
 }
 .menu__titulo {
   font-size: 35px;
@@ -50,88 +38,93 @@ body {
   text-decoration: none;
   color: var(--color-principal);
 }
-.menu__content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 10px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.nav__collapse {
-  width: 100%;
-  transition: 0.5s;
-}
-.nav__collapse-inactive {
-  display: none;
-  transition: 0.5s;
-}
-.nav__collapse .nav__content .nav__links a {
-  text-decoration: none;
-  list-style: none;
-  font-size: 1.4rem;
-  color: var(--color-white);
-  text-transform: capitalize;
-}
-.nav__collapse .nav__content .nav__links {
-  margin: 8px 0;
-}
-.nav__collapse .nav__content .nav__links a:hover {
-  color: var(--color-principal);
-  transition: all 0.3s;
-  border-bottom: 2px solid var(--color-white);
-}
+
 /* ========================== */
-.fa-html5 {
+
+.html5 {
   position: absolute;
-  top: -50px;
-  font-size: 3rem;
-  color: #d84924;
+  top: -55px;
 }
-.fa-css3-alt {
+.html5 i {
+  color: #d84924;
+  /* text-shadow: 25px -30px 2px #d84924; */
+}
+.css3 {
   position: absolute;
-  right: -50px;
-  color: #2449d8;
-  font-size: 3rem;
+  right: -55px;
+  bottom: 100px;
   transform: rotate(90deg);
 }
-.fa-js {
-  position: absolute;
-  left: -52px;
-  color: #ead41c;
-  font-size: 3rem;
-  transform: rotate(-90deg);
+.css3 i {
+  color: #2449d8;
+  /* text-shadow: 25px -30px 2px #2449d8; */
+  /* filter: drop-shadow(0px 0px 10px #2449d8); */
 }
-.fa-bootstrap {
+.js {
   position: absolute;
-  bottom: -50px;
+  left: -55px;
+  bottom: 100px;
+  transform: rotate(-90deg); 
+
+}
+.js i {
+  color: #ead41c;
+  /* text-shadow: 25px -30px 2px #ead41c; */
+}
+.bootstrap {
+  position: absolute;
+  bottom: -55px;
   color: #804bcd;
-  font-size: 3rem;
+  transform: rotate(-180deg); 
+}
+.bootstrap i {
+  color: #804bcd;
+  /* text-shadow: 25px -30px 2px #804bcd; */
+}
+.brans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #ff0066; */
+  box-shadow: 0 0 10px #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.brans i {
+  position: relative;
+  font-size: 1.8rem;
+  right: -5px;
 }
 .girar {
   position: absolute;
   display: flex;
-  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 50px;
+  padding: 80px;
+  border: 1px solid #ffffff3a;
+  border-radius: 100%;
   animation-name: girar;
-  animation-duration: 25s;
-  animation-timing-function: linear;
+  animation-duration: 50s;
+  animation-timing-function: ease;
   animation-iteration-count: infinite;
-}
+  }
 @keyframes girar {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(365deg);
+  
   }
 }
 
 /*  =============================  */
 .main {
-  margin-top: 60px;
+  margin-top: 40px;
+    position: fixed;
   width: 100%;
 }
 .main__content {
@@ -139,12 +132,15 @@ body {
   place-content: center;
   place-items: center;
   margin: 0px 10px;
+  margin: auto;
+  max-width: 80rem;
+ height: 80vh;
 }
 .main__content .title {
   font-family: var(--fontTitulos);
   font-size: 2.5rem;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 50px;
   margin: 0;
   color: var(--color-white);
   text-shadow: 1px 1px 2px #ff0066;
@@ -160,7 +156,6 @@ body {
 .main__content .sub-titulo {
   font-family: var(--fontTitulos);
   font-weight: bold;
-  font-size: 2rem;
   text-align: center;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 2px #ff0066;
@@ -170,6 +165,7 @@ body {
   animation: tipear 2s steps(18), caminar 0.5s step-end alternate;
   /* text-decoration: underline var(--color-dark); */
   overflow: hidden;
+  margin: auto;
 }
 @keyframes tipear {
   from {
@@ -184,7 +180,6 @@ body {
     border-right: red;
   }
 }
-
 .content__img {
   display: flex;
   align-items: center;
@@ -193,13 +188,14 @@ body {
   margin-top: 60px;
 }
 .content__img img {
-  width: 12rem;
+  min-width: 10rem;
+  max-width: 18rem; 
   border-radius: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 8px;
 }
 .main .mas {
   background-color: var(--color-principal);
-  padding: 8px 20px;
   border-radius: 5px;
   font-family: var(--fontText);
   font-weight: 700;
