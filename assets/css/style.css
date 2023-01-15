@@ -11,12 +11,12 @@
   --fontText: "Inconsolata", monospace;
   --menu: #0000006e;
 }
-body {
+
+.body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.437), #000000d2),
     url("/assets/img/fondo-desktop.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .menu {
@@ -24,7 +24,7 @@ body {
   background-color: var(--menu);
   display: flex;
   align-items: center;
-  position: fixed;
+  position:fixed;
   top: 0%;
   width: 100%;
   z-index: 1000;
@@ -45,7 +45,8 @@ body {
   position: absolute;
   top: -55px;
 }
-.html5 i {
+.html5 i,
+.fa-html5 {
   color: #d84924;
   /* text-shadow: 25px -30px 2px #d84924; */
 }
@@ -55,7 +56,8 @@ body {
   bottom: 100px;
   transform: rotate(90deg);
 }
-.css3 i {
+.css3 i,
+.fa-css3-alt {
   color: #2449d8;
   /* text-shadow: 25px -30px 2px #2449d8; */
   /* filter: drop-shadow(0px 0px 10px #2449d8); */
@@ -64,10 +66,10 @@ body {
   position: absolute;
   left: -55px;
   bottom: 100px;
-  transform: rotate(-90deg); 
-
+  transform: rotate(-90deg);
 }
-.js i {
+.js i,
+.fa-js {
   color: #ead41c;
   /* text-shadow: 25px -30px 2px #ead41c; */
 }
@@ -75,11 +77,18 @@ body {
   position: absolute;
   bottom: -55px;
   color: #804bcd;
-  transform: rotate(-180deg); 
+  transform: rotate(-180deg);
 }
-.bootstrap i {
+.bootstrap i,
+.fa-bootstrap {
   color: #804bcd;
   /* text-shadow: 25px -30px 2px #804bcd; */
+}
+.fa-github {
+  color: #252525;
+}
+.fa-sass {
+  color: #c26191;
 }
 .brans {
   display: flex;
@@ -110,22 +119,22 @@ body {
   animation-duration: 50s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
-  }
+}
 @keyframes girar {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(365deg);
-  
   }
 }
-
 /*  =============================  */
 .main {
-  margin-top: 40px;
-    position: fixed;
+  margin-top: 50px;
+   position: fixed;
   width: 100%;
+  
+  ;
 }
 .main__content {
   display: grid;
@@ -133,8 +142,8 @@ body {
   place-items: center;
   margin: 0px 10px;
   margin: auto;
-  max-width: 80rem;
- height: 80vh;
+  max-width: 75rem;
+  height: 80vh;
 }
 .main__content .title {
   font-family: var(--fontTitulos);
@@ -180,6 +189,14 @@ body {
     border-right: red;
   }
 }
+.header__detalles {
+  white-space: nowrap;
+  width: 20ch;
+  animation: tipear 3s steps(18), caminar 0.5s step-end alternate;
+  overflow: hidden;
+  margin: auto;
+}
+
 .content__img {
   display: flex;
   align-items: center;
@@ -189,12 +206,15 @@ body {
 }
 .content__img img {
   min-width: 10rem;
-  max-width: 18rem; 
+  max-width: 18rem;
   border-radius: 100%;
   object-fit: contain;
   padding: 8px;
 }
-.main .mas {
+.contactame__info{
+  margin: 20px;
+}
+.contactame__info .mas {
   background-color: var(--color-principal);
   border-radius: 5px;
   font-family: var(--fontText);
@@ -209,9 +229,116 @@ body {
   color: var(--color-white);
   transition: all 0.5s;
 }
+/* ===============Sobre Mi================== */
+.container__sobre-mi {
+  display: grid;
+  /* place-content: center; */
+  /* width: 80%;
+  margin: auto;
+  padding: 10px 40px; */
+}
+.info__container {
+  padding: 0 15px;
+  font-family: var(--fontText);
+  font-weight: 600;
+  text-align: center;
+}
+.info__container i {
+  font-size: 20px;
+}
+.info__container h2,
+.h2 {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: var(--fontTitulos);
+  color: var(--color-principal);
+  box-shadow: 2px 2px 4px #b9b8b8, -2px -2px 4px #b9b8b8;
+  margin: auto;
+}
+.info__container .name {
+  font-family: var(--fontTitulos);
+  color: var(--color-principal);
+}
+.info__container .bordes {
+  display: inline-flex;
+  align-items: center;
+}
+.info__container .bordes::before {
+  content: "------";
+  font-weight: bolder;
+  font-size: 25px;
+  color: var(--menu);
+}
+.info__container .bordes::after {
+  content: "------";
+  font-weight: bolder;
+  font-size: 25px;
+  color: var(--menu);
+}
+/* ============ REDES SOLCIALES=========== */
+
+.linkedin i {
+  color: #2449d8;
+}
+.whatsapp i {
+  color: var(--color-principal);
+}
+.instagram i {
+  color: #db038f;
+}
+
+.facebook i {
+  color: #1771e6;
+}
+.linkedin {
+  border-right: 1px solid var(--color-dark);
+  border-left: 4px solid #2449d8;
+}
+.whatsapp {
+  border-right: 1px solid var(--color-dark);
+  border-left: 4px solid var(--color-principal);
+}
+.instagram {
+  border-right: 1px solid var(--color-dark);
+  border-left: 4px solid #db038f;
+}
+.facebook {
+  border-right: 1px solid var(--color-dark);
+  border-left: 4px solid #1771e6;
+}
+.info__cuentas {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-evenly;
+  padding:10px 0;
+  width: 60%;
+  margin: auto;
+}
+.info__cuentas a {
+  text-align: center;
+  padding: 8px 5px;
+  border-radius: 5px;
+}
+.info__cuentas a:hover {
+  border-right: 1px solid var(--color-principal);
+  border-left: 4px solid var(--color-dark);
+  text-align: center;
+  padding: 8px 5px;
+  border-radius: 5px;
+}
+.info__lenguaje-item i {
+  color: var(--color-dark);
+}
+/* ============Sobre Mi============= */
+.habilidades__responsive i {
+  color: var(--color-dark);
+
+}
 /* ================= FOOTER ====================== */
 footer {
-  position: fixed;
+  position:absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,6 +346,7 @@ footer {
   bottom: 0%;
   padding: 14px 0;
   background-color: var(--menu);
+  z-index: 950;
 }
 footer div {
   font-family: var(--fontTitulos);
