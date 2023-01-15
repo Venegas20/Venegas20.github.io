@@ -57,6 +57,17 @@
     transition: all 0.3s;
     border-bottom: 2px solid var(--color-white);
   }
+  .info__cuentas {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    width: 80%;
+    margin: auto;
+   }
+   .info__cuentas i{
+    font-size: 1.4rem;
+   }
   /*  =============================  */
 
   .content__img img {
@@ -87,7 +98,7 @@
   .main__content .main__content-p {
     font-family: var(--fontText);
     font-weight: 600;
-    margin: 10px 0;
+    margin: 20px 0;
     font-size: 1.4rem;
     color: var(--color-white);
     

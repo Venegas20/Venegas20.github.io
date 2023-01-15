@@ -51,7 +51,7 @@
   .main__content .main__content-p {
     font-family: var(--fontText);
     font-weight: 600;
-    margin: 20px 0;
+    margin: 25px 0;
     font-size: 1.4rem;
     color: var(--color-white);
     /* text-shadow: 1px 1px 1px #18d26e; */
