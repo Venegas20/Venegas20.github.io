@@ -30,7 +30,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -45,7 +45,7 @@
   .nav__collapse .nav__content .nav__links a {
     text-decoration: none;
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--color-white);
     text-transform: capitalize;
   }
@@ -54,7 +54,7 @@
   }
   .nav__collapse .nav__content .nav__links a:hover {
     color: var(--color-principal);
-    transition: all 0.3s;
+       transition: all 0.5s;
     border-bottom: 2px solid var(--color-white);
   }
   .info__cuentas {
@@ -64,10 +64,10 @@
     padding: 10px 0;
     width: 80%;
     margin: auto;
-   }
-   .info__cuentas i{
+  }
+  .info__cuentas i {
     font-size: 1.4rem;
-   }
+  }
   /*  =============================  */
 
   .content__img img {
@@ -91,20 +91,19 @@
     font-family: var(--fontTitulos);
     font-size: 2.5rem;
     text-align: center;
-    padding-top: 50px;
-    margin: 0;
-    color: var(--color-white);
-      }
-  .main__content .main__content-p {
-    font-family: var(--fontText);
-    font-weight: 600;
-    margin: 20px 0;
-    font-size: 1.4rem;
+    margin-top: 45px;
     color: var(--color-white);
     
   }
+  .main__content .main__content-p {
+    font-family: var(--fontText);
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 1.25rem;
+    color: var(--color-white);
+  }
 
-  .main .mas {
+  .contactame__info .mas {
     background-color: var(--color-principal);
     padding: 8px 20px;
     border-radius: 5px;
@@ -114,7 +113,7 @@
     text-transform: uppercase;
     color: initial;
     font-size: 1rem;
-    margin: 20px;
+    margin-top: 20px;
   }
   .mas:hover {
     background-color: var(--color-dark);
@@ -152,7 +151,7 @@
   .header__detalles h2 {
     text-shadow: 0 0 3px var(--color-principal);
   }
-  
+
   .container__sobre-mi {
     display: grid;
     place-content: center;
@@ -161,13 +160,7 @@
     margin: auto;
     border-left: 8px solid var(--color-principal);
     border-radius: 15px;
-    padding: 0 10px ;
-   
-  }
-  .parrafo {
-    margin: 20px 0;
-    text-align: start;
-    font-size: 1em;
+    padding: 0 10px;
   }
   .text {
     box-shadow: 2px 2px 2px #b9b8b8, -2px -2px 4px #b9b8b8;
@@ -196,8 +189,33 @@
     font-size: 2rem;
     padding: 10px;
   }
-  .proyectos__item {
+  
+  .proyectos__item a{
+    display: flex;
+    align-items: center;
     text-align: start;
-    margin: 15px 0;
+    margin: 5px 0;
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 700;
+    
+  }
+  .proyectos__item{
+    display: block;
+  
+  }
+  .proyectos__item a i{
+  color: var(--menu);
+  
+  }
+  .proyectos__item a i:hover{
+        color: var(--color-dark);
+        transition: all 0.3s;
+   
+  }
+  .proyectos__item a:hover{
+        color: var(--color-dark);
+        transition: all 0.3s;
+   
   }
 }

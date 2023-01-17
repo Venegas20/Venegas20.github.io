@@ -9,7 +9,7 @@
   --color-dark: #252525;
   --fontTitulos: "Oswald", sans-serif;
   --fontText: "Inconsolata", monospace;
-  --menu: #0000006e;
+  --menu: #00000077;
 }
 
 .body {
@@ -18,8 +18,8 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
-.menu {
+  }
+  .menu {
   font-family: var(--fontTitulos);
   background-color: var(--menu);
   display: flex;
@@ -85,7 +85,7 @@
   /* text-shadow: 25px -30px 2px #804bcd; */
 }
 .fa-github {
-  color: #252525;
+  color: #502677;
 }
 .fa-sass {
   color: #c26191;
@@ -142,17 +142,17 @@
   place-items: center;
   margin: 0px 10px;
   margin: auto;
-  max-width: 75rem;
-  height: 80vh;
+  max-width: 70rem;
+  height: 82vh;
 }
 .main__content .title {
   font-family: var(--fontTitulos);
   font-size: 2.5rem;
   text-align: center;
-  padding-top: 50px;
-  margin: 0;
+   
   color: var(--color-white);
   text-shadow: 1px 1px 2px #ff0066;
+  /* background-color: #18d26e; */
 }
 .main__content .main__content-p {
   font-family: var(--fontText);
@@ -187,6 +187,7 @@
   }
 }
 .header__detalles {
+  text-align: center;
   white-space: nowrap;
   width: 20ch;
   animation: tipear 3s steps(18), caminar 0.5s step-end alternate;
@@ -279,7 +280,7 @@
   color: #2449d8;
 }
 .whatsapp i {
-  color: var(--color-principal);
+  color:#00ff77;
 }
 .instagram i {
   color: #db038f;
@@ -289,46 +290,79 @@
   color: #1771e6;
 }
 .linkedin {
-  border-right: 1px solid var(--color-dark);
+  border-right: 2px solid var(--color-white);
   border-left: 4px solid #2449d8;
 }
 .whatsapp {
-  border-right: 1px solid var(--color-dark);
-  border-left: 4px solid var(--color-principal);
+  border-right: 2px solid var(--color-white);
+  border-left: 4px solid #00ff77;
 }
 .instagram {
-  border-right: 1px solid var(--color-dark);
+  border-right: 2px solid var(--color-white);
   border-left: 4px solid #db038f;
 }
 .facebook {
-  border-right: 1px solid var(--color-dark);
+  border-right: 2px solid var(--color-white);
   border-left: 4px solid #1771e6;
 }
+
 .info__cuentas {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 10px 0;
+  margin-bottom: 20px;
   width: 60%;
 }
+
 .info__cuentas a {
   text-align: center;
   padding: 8px 5px;
   border-radius: 5px;
 }
 .info__cuentas a:hover {
-  border-right: 1px solid var(--color-principal);
+  border-right:2px solid var(--color-principal);
   border-left: 4px solid var(--color-dark);
   text-align: center;
   padding: 8px 5px;
   border-radius: 5px;
+  transition: ease-out 0.5s;
+}
+.info__cuentas .whatsapp:hover {
+  border-right:2px solid #00ff77;
+  border-left: 4px solid var(--color-dark);
+   transition: ease-out 0.5s;
+}
+.info__cuentas .linkedin:hover {
+  border-right:2px solid #1771e6;
+  border-left: 4px solid var(--color-dark);
+   transition: ease-out 0.5s;
+}
+.info__cuentas .instagram:hover {
+  border-right:2px solid #db038f;
+  border-left: 4px solid var(--color-dark);
+   transition: ease-out 0.5s;
+}
+.info__cuentas .facebook:hover {
+  border-right:2px solid #1771e6;
+  border-left: 4px solid var(--color-dark);
+   transition: ease-out 0.5s;
 }
 .info__lenguaje-item i {
   color: var(--color-dark);
 }
 /* ============Sobre Mi============= */
+.parrafo{
+  margin: 20px 0;
+    text-align: start;
+  font-size: 1.2rem;
+}
 .habilidades__responsive i {
   color: var(--color-dark);
+}
+
+.container{
+  margin-bottom: 50px;
 }
 /* ================= FOOTER ====================== */
 footer {
@@ -338,7 +372,7 @@ footer {
   justify-content: center;
   width: 100%;
   bottom: 0%;
-  padding: 14px 0;
+  padding: 10px 0;
   background-color: var(--menu);
   z-index: 950;
 }

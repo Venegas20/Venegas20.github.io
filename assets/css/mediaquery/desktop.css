@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
   }
   .nav__links,
   a {
@@ -28,12 +29,14 @@
     color: var(--color-white);
     font-size: 1.4rem;
     text-transform: capitalize;
+    
   }
   .nav__collapse .nav__content .nav__links a:hover {
     color: var(--color-principal);
-    transition: all 0.3s;
+    transition: all 0.5s;
     border-bottom: 2px solid var(--color-white);
   }
+  
   /*  =============================  */
   .main__content {
     display: grid;
@@ -56,16 +59,16 @@
   .main__content .main__content-p {
     font-family: var(--fontText);
     font-weight: 600;
-    margin: 40px 0;
+    margin: 20px 0;
     font-size: 1.4rem;
     color: var(--color-white);
     /* text-shadow: 1px 1px 1px #18d26e; */
   }
 
-  .main .mas {
+  .contactame__info .mas {
     background-color: var(--color-principal);
-    padding: 10px 50px;
-    margin-top: 20px;
+    padding: 5px 50px;
+    /* margin-top:40px; */
     border-radius: 5px;
     font-family: var(--fontText);
     font-weight: 700;
@@ -73,14 +76,16 @@
     text-transform: uppercase;
     color: initial;
     font-size: 1rem;
+    font-family: var(--fontTitulos);
+    
   }
   .mas:hover {
     background-color: var(--color-dark);
-    color: var(--color-white);
+    color: var(--color-principal);
     transition: all 0.5s;
   }
   /* ===============Sobre Mi================== */
-
+ 
   .header__sobreMi {
     position: relative;
     margin-bottom: 20px;
@@ -126,6 +131,7 @@
     margin: 20px 0;
     text-align: start;
     font-size: 1.2rem;
+    
   }
   .text {
     box-shadow: 2px 2px 2px #b9b8b8, -2px -2px 4px #b9b8b8;
@@ -146,25 +152,25 @@
   }
   .habilidades__item {
     border-left: 5px solid var(--color-principal);
-    border-right: 1px solid var(--color-dark);
+    border-right: 2px solid var(--color-dark);
     border-radius: 0.3rem;
   }
 
   .responsive-item {
     border-left: 5px solid var(--color-white);
-    border-right: 1px solid var(--color-principal);
+    border-right: 2px solid var(--color-principal);
     border-radius: 0.5rem;
     padding: 10px 20px;
   }
   .habilidades__item:hover {
     border-left: 5px solid var(--color-dark);
-    border-right: 1px solid var(--color-principal);
+    border-right:2px solid var(--color-principal);
     border-radius: 0.3rem;
     transition: ease 0.5s;
   }
   .responsive-item:hover {
     border-left: 5px solid var(--color-dark);
-    border-right: 1px solid var(--color-principal);
+    border-right: 2px solid var(--color-principal);
     border-radius: 0.3rem;
     transition: ease 0.5s;
   }
@@ -173,8 +179,27 @@
     font-size: 2.5rem;
     padding: 10px;
   }
-  .proyectos__item {
+  .proyectos__item a{
+    display: flex;
+    align-items: center;
     text-align: start;
-    margin: 15px 0;
+    margin:8px 0;
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 700;
+    font-size:1.2rem;      }
+  .proyectos__item{
+    display: block;
+  
+  }
+  .proyectos__item a i{
+  color: var(--color-dark);
+  
+  }
+  
+  .proyectos__item a:hover{
+        color: var(--color-principal);
+        transition: all 0.3s;
+   
   }
 }
