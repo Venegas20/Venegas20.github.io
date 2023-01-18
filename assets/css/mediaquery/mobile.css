@@ -36,11 +36,15 @@
   }
   .nav__collapse {
     width: 100%;
-    transition: 0.5s;
-  }
-  .nav__collapse-inactive {
-    display: none;
-    transition: 0.5s;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s;
+    border-left: 4px solid rgb(255, 255, 255);
+    padding-left: 10px;
+      }
+
+  .nav__collapse.inactive {
+    height: 119px;
   }
   .nav__collapse .nav__content .nav__links a {
     text-decoration: none;
@@ -54,7 +58,7 @@
   }
   .nav__collapse .nav__content .nav__links a:hover {
     color: var(--color-principal);
-       transition: all 0.5s;
+    transition: all 0.5s;
     border-bottom: 2px solid var(--color-white);
   }
   .info__cuentas {
@@ -93,7 +97,6 @@
     text-align: center;
     margin-top: 45px;
     color: var(--color-white);
-    
   }
   .main__content .main__content-p {
     font-family: var(--fontText);
@@ -189,8 +192,8 @@
     font-size: 2rem;
     padding: 10px;
   }
-  
-  .proyectos__item a{
+
+  .proyectos__item a {
     display: flex;
     align-items: center;
     text-align: start;
@@ -198,24 +201,19 @@
     text-decoration: none;
     color: var(--color-dark);
     font-weight: 700;
-    
   }
-  .proyectos__item{
+  .proyectos__item {
     display: block;
-  
   }
-  .proyectos__item a i{
-  color: var(--menu);
-  
+  .proyectos__item a i {
+    color: var(--menu);
   }
-  .proyectos__item a i:hover{
-        color: var(--color-dark);
-        transition: all 0.3s;
-   
+  .proyectos__item a i:hover {
+    color: var(--color-dark);
+    transition: all 0.3s;
   }
-  .proyectos__item a:hover{
-        color: var(--color-dark);
-        transition: all 0.3s;
-   
+  .proyectos__item a:hover {
+    color: var(--color-dark);
+    transition: all 0.3s;
   }
 }

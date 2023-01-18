@@ -2,21 +2,19 @@
 
 let menuToggle = document.getElementById('btnMenu');
 
-let menuCollapse = document.getElementById('collapseMenu');
-let contador =0;
+const menuCollapse = document.getElementById('collapseMenu');
 
 menuToggle.addEventListener('click', function () {
 
-    if (contador == 0) {
-        menuCollapse.classList.remove('nav__collapse-inactive')
-        contador = 1;
-
-        console.log(contador);
-    }else{
-        menuCollapse.classList.add('nav__collapse-inactive')
-        contador = 0; 
-        
+    console.log("click");
+    // menuCollapse.classList.toggle('inactive')
+    let h = menuCollapse.scrollHeight;
+    let h2 = menuCollapse.clientHeight;
+    console.log("scroll:", h);
+    console.log("client:", h2);
+    let heigth = 0;
+    if (menuCollapse.clientHeight == "0") {
+        heigth = menuCollapse.scrollHeight;
     }
-
-
+    menuCollapse.style.height = `${heigth}px`;
 })
