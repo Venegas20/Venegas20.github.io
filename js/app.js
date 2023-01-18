@@ -18,3 +18,9 @@ menuToggle.addEventListener('click', function () {
     }
     menuCollapse.style.height = `${heigth}px`;
 })
+
+
+window.onload = function(){
+    document.getElementById("Load").style.display="none"
+
+};
