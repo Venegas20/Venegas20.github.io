@@ -41,7 +41,7 @@
     transition: height 0.5s;
     border-left: 4px solid rgb(255, 255, 255);
     padding-left: 10px;
-      }
+  }
 
   .nav__collapse.inactive {
     height: 119px;
@@ -214,6 +214,120 @@
   }
   .proyectos__item a:hover {
     color: var(--color-dark);
+    transition: all 0.3s;
+  }
+  /* ============ PROYECTOS =========== */
+  .fa-link {
+    color: var(--color-dark);
+  }
+  .link-pro {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-dark);
+  }
+
+  .header__title {
+    font-family: var(--fontTitulos);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .proyectos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 12px;
+    margin: 40px 10px;
+  }
+  .proyectos__link {
+    font-family: var(--fontTitulos);
+  }
+  .link__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .link__item {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .link__item:hover {
+    color: var(--color-principal);
+    text-decoration: underline 2px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .proyecto__container {
+    display: flex;
+    max-width: 26.5rem;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .parrafo-pro {
+    margin: 6px 0;
+  }
+  .title-pro {
+    font-family: var(--fontTitulos);
+    text-align: center;
+    color: var(--color-principal);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .link-pro {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: var(--color-white);
+    font-family: var(--fontTitulos);
+    font-weight: bolder;
+  }
+  .link-pro i {
+    color: var(--color-principal);
+  }
+  .pro__img {
+    width: 100%;
+    height: 10%;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 15px;
+  }
+
+  .proyecto__item-1 h3 {
+    margin: 8px 0;
+  }
+  .proyecto__container::after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: var(--color-principal);
+    position: absolute;
+    transform: translateX(50%);
+  }
+
+  .poryecto__content {
+    position: absolute;
+    background-color: var(--menu);
+    padding: 10px;
+    height: 100%;
+    font-family: var(--fontText);
+    transform: translateY(100%);
+    transition: all 0.5s;
+    color: var(--color-white);
+  }
+  .proyecto__container:hover .poryecto__content {
+    transform: translateY(25%);
+    transition: all 0.8s;
+  }
+  .link-pro:hover {
+    color: var(--color-principal);
     transition: all 0.3s;
   }
 }

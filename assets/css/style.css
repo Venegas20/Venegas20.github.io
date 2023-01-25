@@ -9,7 +9,7 @@
   --color-dark: #252525;
   --fontTitulos: "Oswald", sans-serif;
   --fontText: "Inconsolata", monospace;
-  --menu: #00000077;
+  --menu: #00000097;
 }
 
 .body {
@@ -18,8 +18,11 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  }
-  .menu {
+}
+.size-icon {
+  font-size: 1.4rem;
+}
+.menu {
   font-family: var(--fontTitulos);
   background-color: var(--menu);
   display: flex;
@@ -29,7 +32,7 @@
   width: 100%;
   z-index: 1000;
   transition: 0.5s;
- }
+}
 .menu-toggle {
   display: none;
 }
@@ -150,7 +153,7 @@
   font-family: var(--fontTitulos);
   font-size: 2.5rem;
   text-align: center;
-   
+
   color: var(--color-white);
   text-shadow: 1px 1px 2px #ff0066;
   /* background-color: #18d26e; */
@@ -281,7 +284,7 @@
   color: #2449d8;
 }
 .whatsapp i {
-  color:#00ff77;
+  color: #00ff77;
 }
 .instagram i {
   color: #db038f;
@@ -322,7 +325,7 @@
   border-radius: 5px;
 }
 .info__cuentas a:hover {
-  border-right:2px solid var(--color-principal);
+  border-right: 2px solid var(--color-principal);
   border-left: 4px solid var(--color-dark);
   text-align: center;
   padding: 8px 5px;
@@ -330,41 +333,76 @@
   transition: ease-out 0.5s;
 }
 .info__cuentas .whatsapp:hover {
-  border-right:2px solid #00ff77;
+  border-right: 2px solid #00ff77;
   border-left: 4px solid var(--color-dark);
-   transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
 }
 .info__cuentas .linkedin:hover {
-  border-right:2px solid #1771e6;
+  border-right: 2px solid #1771e6;
   border-left: 4px solid var(--color-dark);
-   transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
 }
 .info__cuentas .instagram:hover {
-  border-right:2px solid #db038f;
+  border-right: 2px solid #db038f;
   border-left: 4px solid var(--color-dark);
-   transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
 }
 .info__cuentas .facebook:hover {
-  border-right:2px solid #1771e6;
+  border-right: 2px solid #1771e6;
   border-left: 4px solid var(--color-dark);
-   transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
 }
 .info__lenguaje-item i {
   color: var(--color-dark);
 }
 /* ============Sobre Mi============= */
-.parrafo{
+.parrafo {
   margin: 20px 0;
-    text-align: start;
+  text-align: start;
   font-size: 1.2rem;
 }
 .habilidades__responsive i {
   color: var(--color-dark);
 }
 
-.container{
+.container {
   margin-bottom: 50px;
 }
+/* ============ PROYECTOS =========== */
+.header__proyecto {
+  padding: 50px 10px;
+  background-image: linear-gradient(
+    to right,
+    var(--color-dark) 0%,
+    var(--color-white) 100%
+  );
+}
+.pro__contactame {
+  /* background-color: #000; */
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 1.6rem;
+  display: grid;
+  place-content: center;
+  font-family: var(--fontText);
+}
+.pro__title {
+  font-family: var(--fontTitulos);
+  color: var(--color-principal);
+  letter-spacing: 4px;
+}
+
+.pro__contactame a {
+  text-decoration: none;
+  font-family: var(--fontTitulos);
+  color: var(--color-white);
+}
+.pro__text {
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: var(--color-principal);
+}
+
 /* ================= FOOTER ====================== */
 footer {
   position: absolute;

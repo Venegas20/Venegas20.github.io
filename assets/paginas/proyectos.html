@@ -6,23 +6,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos</title>
+    <!-- font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/mediaquery/mobile.css">
+    <link rel="stylesheet" href="/assets/css/mediaquery/tablet.css">
+    <link rel="stylesheet" href="/assets/css/mediaquery/desktop.css">
 </head>
 
 <body>
-    <header class="">
-        <div class="">
-            <h1 class="">Proyectos</h1>
+    <header class="header__proyecto">
+        <div class="header__title">
+            <a href="/index.html" class="menu__titulo" rel="noopener noreferrer">VENEGAS™</a>
+            <h1 class="title">Portafolio De Proyectos</h1>
         </div>
-    </header>
-    <section class="">
-        <article class="">
-            <div class="">
 
+    </header>
+    <div class="header__link">
+        <ul class="link__content">
+            <li class="link__item">Todos</li>
+            <li class="link__item">Layouts</li>
+            <li class="link__item">Cards</li>
+        </ul>
+    </div>
+
+    <section class="proyectos">
+
+        <article class="proyecto__container">
+            <img class="pro__img" src="/assets/img/fondo-new.jpeg" alt="">
+            <div class="poryecto__content">
+                <div class="poryecto__item">
+                    <h2 class="title-pro">Template</h2>
+                    <p class="parrafo-pro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit
+                        architecto minima.
+                    </p>
+                    <div class="proyecto__item-1">
+                        <h3>Tecnologias usadas como:</h3>
+                        <i class="fa-brands fa-js size-icon"></i>
+                        <i class="fa-brands fa-bootstrap size-icon"></i>
+                        <i class="fa-brands fa-css3-alt size-icon"></i>
+                        <i class="fa-brands fa-html5 size-icon"></i>
+                    </div>
+                    <a class="link-pro size-icon" href="#"><i class="fa-solid fa-link"></i> Ver Site</a>
+                </div>
             </div>
         </article>
 
+        <article class="proyecto__container">
+            <img class="pro__img" src="/assets/img/fondo-new.jpeg" alt="">
+            <div class="poryecto__content">
+                <div class="poryecto__item">
+                    <h2 class="title-pro">Template</h2>
+                    <p class="parrafo-pro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit
+                        architecto minima.
+                    </p>
+                    <div class="proyecto__item-1">
+                        <h3>Tecnologias usadas como:</h3>
+                        <i class="fa-brands fa-js size-icon"></i>
+                        <i class="fa-brands fa-bootstrap size-icon"></i>
+                        <i class="fa-brands fa-css3-alt size-icon"></i>
+                        <i class="fa-brands fa-html5 size-icon"></i>
+                    </div>
+                    <a class="link-pro size-icon" href="#"><i class="fa-solid fa-link"></i> Ver Site</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="proyecto__container">
+            <img class="pro__img" src="/assets/img/fondo-new.jpeg" alt="">
+            <div class="poryecto__content">
+                <div class="poryecto__item">
+                    <h2 class="title-pro">Template</h2>
+                    <p class="parrafo-pro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit
+                        architecto minima.
+                    </p>
+                    <div class="proyecto__item-1">
+                        <h3>Tecnologias usadas como:</h3>
+                        <i class="fa-brands fa-js size-icon"></i>
+                        <i class="fa-brands fa-bootstrap size-icon"></i>
+                        <i class="fa-brands fa-css3-alt size-icon"></i>
+                        <i class="fa-brands fa-html5 size-icon"></i>
+                    </div>
+                    <a class="link-pro size-icon" href="#"><i class="fa-solid fa-link"></i> Ver Site</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="proyecto__container">
+            <img class="pro__img" src="/assets/img/fondo-desktop.jpg" alt="">
+            <div class="poryecto__content">
+                <div class="poryecto__item">
+                    <h2 class="title-pro">Template</h2>
+                    <p class="parrafo-pro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit
+                        architecto minima.
+                    </p>
+                    <div class="proyecto__item-1">
+                        <h3>Tecnologias usadas como:</h3>
+                        <i class="fa-brands fa-js size-icon"></i>
+                        <i class="fa-brands fa-bootstrap size-icon"></i>
+                        <i class="fa-brands fa-css3-alt size-icon"></i>
+                        <i class="fa-brands fa-html5 size-icon"></i>
+                    </div>
+                    <a class="link-pro size-icon" href="#"><i class="fa-solid fa-link"></i> Ver Site</a>
+                </div>
+            </div>
+        </article>
     </section>
+    <div class="pro__contactame" id="modalContactame">
+        <form action="/" class="form__contactame">
+            <h1 class="pro__title">CONTACTAME!</h1>
+            <div class="form__item">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+            </div>
+            <div class="form__item">
+                <label for="email">Gmail</label>
+                <input type="email" name="" id="email">
+            </div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button type="submit" class=" btn-submit">Submit</button>
+        </form>
+        <a href="">¿Tienes un <span class="pro__text">PROYECTO EN MENTE?</span> ¡Hablemos!</a>
+    </div>
+
 
 </body>
 
