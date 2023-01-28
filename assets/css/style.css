@@ -491,50 +491,22 @@
 .parrafo-pro {
   margin: 5px 0;
 }
-
-/* ================= FOOTER ====================== */
-footer {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  bottom: 0%;
-  padding: 10px 0;
-  background-color: var(--menu);
-  z-index: 950;
+/* ===CONTACTAME=== */
+.form__contactame {
 }
-footer div {
-  font-family: var(--fontTitulos);
-  color: var(--color-white);
-}
-footer div a,
-i {
-  font-family: var(--fontTitulos);
-  color: var(--color-principal);
-  padding-right: 10px;
-  text-decoration: none;
+.pro__contactame {
+  margin-top: 50px;
+  background-color: var(--color-dark);
+  padding: 40px 15px;
+  font-family: var(--fontText);
+  text-align: center;
+  border-radius: 5px;
 }
 
 .pro__contactame a {
   text-decoration: none;
   font-family: var(--fontTitulos);
   color: var(--color-white);
-}
-.pro__text {
-  font-weight: bolder;
-  letter-spacing: 2px;
-  color: var(--color-principal);
-}
-/* ===CONTACTAME=== */
-.pro__contactame {
-  margin-top: 50px;
-  background-color: var(--color-dark);
-  padding: 40px 15px;
-
-  font-family: var(--fontText);
-  text-align: center;
-  border-radius: 5px;
 }
 .pro__title {
   font-family: var(--fontTitulos);
@@ -544,11 +516,11 @@ i {
   display: inline;
 }
 .form__contactame {
-  width: 50%;
-  margin:20px auto;
+  width: 40%;
+  margin: 20px auto;
   border-radius: 10px;
   outline: thick double #00ff77;
-  padding: 12px;
+  padding: 20px;
 }
 .form__item {
   margin: 20px 0;
@@ -576,28 +548,116 @@ textarea {
   outline: none;
   padding: 10px 5px;
   border-radius: 5px;
-  color:var(--color-dark) ;
+  color: var(--color-dark);
   font-family: "Arial";
 }
-.form__buttom{
-  
+.form__buttom {
 }
-.form__buttom .btn-submit{
-background-color: var(--color-principal);
-padding: 10px 60px;
-border-radius: 5px;
-margin: 10px 0;
-font-weight: 700;
-font-size: 1.2rem;
-cursor: pointer;
+.form__buttom .btn-submit {
+  background-color: var(--color-principal);
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 2px solid #00ff77;
 }
-.form__buttom .btn-submit:hover{
-background-color: var(--menu);
-color: var(--color-white);
-transition: all 0.3s;
+.form__buttom .btn-submit:hover {
+  background-color: var(--menu);
+  color: var(--color-white);
+  transition: all 0.3s;
+  border: 2px solid #00ff77;
+}
+.pro__text {
+  font-weight: bolder;
+  color: var(--color-principal);
+  font-size: 2rem;
+}
+.form__cta {
+  font-size: 1.4rem;
+}
+/* ======CONTACTAME========= */
+.main__contactame {
+  padding: 10px;
+}
+.main__cta iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+.main__cta {
+  /* margin: 50px 0; */
+  /* background-color: #2449d8; */
+}
+.main__correo,
+.main__redes {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-dark);
+  border-radius: 10px;
+  padding: 25px 10px;
+  color: var(--color-white);
+  margin: 25px 0;
+}
+.cta {
+  display: block;
+  padding: 10px;
+  border-radius: 100%;
+  font-size: 1.8rem;
+  border: 2px solid #00ff77;
+  color: var(--color-white);
+  margin-right: 10px;
+  cursor: pointer;
+}
+.fa-share-nodes {
+  position: relative;
+  padding-right: 12.5px;
+}
+.main__correo-item .gmail {
+  font-family: "Arial";
+  user-select: none;
+  text-decoration: none;
+  color: inherit;
+}
+.sub__title {
+  font-family: var(--fontTitulos);
+  user-select: none;
+}
+.redes__sociales a {
+  display: inline-flex;
+  font-size: 1.6rem;
+  margin-top: 10px;
+  margin-right: 15px;
+  border-radius: 10px;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+.redes__sociales i {
+  position: relative;
+  right: -5px;
+}
 
-
+/* ================= FOOTER ====================== */
+footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  bottom: 0%;
+  padding: 10px 0;
+  background-color: var(--menu);
+  z-index: 950;
 }
-.form__cta{
-   font-size: 1.4rem;
+footer div {
+  font-family: var(--fontTitulos);
+  color: var(--color-white);
+}
+footer div a,
+i {
+  font-family: var(--fontTitulos);
+  color: var(--color-principal);
+  padding-right: 10px;
+  text-decoration: none;
 }
