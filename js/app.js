@@ -21,7 +21,7 @@ menuToggle.addEventListener('click', function () {
 
 
 window.onload = function(){
-    document.getElementById("Load").style.display="none"
+    document.getElementById("load").style.display="none"
 
 };
 

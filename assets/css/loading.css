@@ -1,16 +1,111 @@
-.loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #808080;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    z-index: 1001;
-    display: flex;
-    align-items: center;
-  }
+:root {
+  --color-principal: #18d26e;
+  --fontTitulos: "Oswald", sans-serif;
+}
+
+.center-main {
+  display: grid;
+  place-content: center;
+  position: fixed;
+  background-color: #111111;
+  z-index: 10001;
+  width: 100%;
+  height: 100vh;
+
+}
+.center-main a {
+ color: #18d26e;
+  text-decoration: none;
+  font-size: 2.5rem;
+/* text-shadow: 1px  1px 5px  #00ff48; */
+  font-family: var(--fontTitulos);
+}
+
+.center-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  /* height: 100vh; */
+   /* center box */
+  /* width: 300px; */
+  /* height: 300px; */
+  /* border: solid 1px #aaa;  */
+  /* background-color: antiquewhite; */
+}
+
+.loader-circle-11 {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform-style: preserve-3d;
+  perspective: 400px;
+  
+}
+
+.loader-circle-11 .arc {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: 5px solid #08ff665a;
+  border-bottom: 5px solid #00ff77;
  
+}
+
+.loader-circle-11 .arc:nth-child(1) {
+  animation: rotate1 1.15s linear infinite;
+  
+}
+.loader-circle-11 .arc:nth-child(2) {
+  animation: rotate2 1.15s linear infinite;
+}
+
+.loader-circle-11 .arc:nth-child(3) {
+  animation: rotate3 1.15s linear infinite;
+}
+
+.loading .arc:nth-child(1) {
+  animation-delay: -0.8s;
+}
+
+.loader-circle-11 .arc:nth-child(2) {
+  animation-delay: -0.4s;
+}
+
+.loader-circle-11 .arc:nth-child(3) {
+  animation-delay: 0s;
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0);
+  }
+
+  to {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(1turn);
+  }
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0);
+  }
+
+  to {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(1turn);
+  }
+}
+
+@keyframes rotate3 {
+  from {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0);
+  }
+
+  to {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(1turn);
+  }
+}

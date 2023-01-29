@@ -282,16 +282,20 @@
 
 .linkedin i {
   color: #2449d8;
+  font-size: 1.4rem;
 }
 .whatsapp i {
   color: #00ff77;
+  font-size: 1.4rem;
 }
 .instagram i {
   color: #db038f;
+  font-size: 1.4rem;
 }
 
 .facebook i {
   color: #1771e6;
+  font-size: 1.4rem;
 }
 .linkedin {
   border-right: 2px solid var(--color-white);
@@ -321,15 +325,16 @@
 
 .info__cuentas a {
   text-align: center;
-  padding: 8px 5px;
+  padding: 10px 5px;
   border-radius: 5px;
+}
+.info__cuentas .fa-brands {
+  position: relative;
+  right: -5px;
 }
 .info__cuentas a:hover {
   border-right: 2px solid var(--color-principal);
   border-left: 4px solid var(--color-dark);
-  text-align: center;
-  padding: 8px 5px;
-  border-radius: 5px;
   transition: ease-out 0.5s;
 }
 .info__cuentas .whatsapp:hover {
@@ -497,7 +502,7 @@
 .pro__contactame {
   margin-top: 50px;
   background-color: var(--color-dark);
-  padding: 40px 15px;
+  padding: 40px 0;
   font-family: var(--fontText);
   text-align: center;
   border-radius: 5px;
@@ -516,7 +521,7 @@
   display: inline;
 }
 .form__contactame {
-  width: 40%;
+  width: 50%;
   margin: 20px auto;
   border-radius: 10px;
   outline: thick double #00ff77;
@@ -537,7 +542,7 @@
   width: 100%;
   font-family: "Arial";
   margin: 5px 0;
-  outline-color: var(--color-principal);
+  outline-color: #00ff77;
   border-radius: 5px;
   padding: 12px 5px;
   color: var(--color-dark);
@@ -637,8 +642,78 @@ textarea {
   position: relative;
   right: -5px;
 }
-
+.form__contacto {
+  background-color: var(--color-dark);
+  padding: 10px;
+  border-radius: 10px;
+}
+.form__contacto h1 {
+  font-family: var(--fontTitulos);
+  color: var(--color-white);
+  font-size: 4rem;
+  padding: 0;
+  text-align: center;
+  margin: auto;
+  border-bottom: 4px solid #00ff77;
+  width: 80%;
+}
+.form__cta {
+  /* background-color: #252525; */
+}
+.form__cta label {
+  display: inline-block;
+  color: var(--color-white);
+  font-family: var(--fontTitulos);
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 20px 0 0px 0;
+}
+.form__cta input {
+  color: var(--color-white);
+  font-family: "Arial";
+  font-weight: 600;
+  font-size: 1rem;
+  width: 100%;
+  padding: 10px 5px;
+  /* border-radius: 5px; */
+  margin-bottom: 25px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #00ff77;
+  background-color: var(--color-dark);
+}
+.form__cta input:hover {
+  border-bottom: 2px solid #ffffff;
+  transition: all 0.3s;
+}
+body{
+  background-color: var(--menu);
+}
+textarea {
+  padding: 5px;
+}
+.from__btn {
+  display: flex;
+  align-items: center;
+  place-content: center;
+  margin: 20px 0;
+}
+.from__btn .btn__button {
+  width: 50%;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+    background-color: var(--color-principal);
+  border: 1px solid #00ff77;
+}
+.from__btn .btn__button:hover {
+  border: 1px solid#00ff77;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  transition: all 0.3s;
+}
 /* ================= FOOTER ====================== */
+
 footer {
   position: absolute;
   display: flex;

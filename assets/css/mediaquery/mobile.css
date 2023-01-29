@@ -54,12 +54,13 @@
     text-transform: capitalize;
   }
   .nav__collapse .nav__content .nav__links {
+    text-decoration: none;
     margin: 8px 0;
   }
   .nav__collapse .nav__content .nav__links a:hover {
     color: var(--color-principal);
-    transition: all 0.5s;
-    border-bottom: 2px solid var(--color-white);
+    transition: all 0.3s;
+    border-bottom-style: double;
   }
   .info__cuentas {
     display: flex;
@@ -217,15 +218,15 @@
     transition: all 0.3s;
   }
   /* ============ PROYECTOS =========== */
- 
+
   .proyectos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     gap: 12px;
-    margin: 35px 20px;
+    margin: 35px 15px;
   }
-  
+
   .link__content {
     display: flex;
     align-items: center;
@@ -234,17 +235,13 @@
     overflow: hidden;
     position: relative;
   }
- 
+
   .proyecto__container:hover .poryecto__content {
     transform: translateY(10%);
     transition: all 0.8s;
   }
   .form__contactame {
     width: 90%;
-    margin:20px auto;
-    border-radius: 10px;
-    outline: thick double #00ff77;
     padding: 12px;
   }
- 
 }
