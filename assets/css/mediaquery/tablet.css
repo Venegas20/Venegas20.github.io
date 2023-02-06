@@ -173,7 +173,7 @@
   }
   .proyectos__item a:hover {
     color: var(--color-principal);
-    transition: all 0.3s;
+    transition: all 0.3s; 
   }
   /* ============ PROYECTOS =========== */
 
@@ -196,5 +196,26 @@
   .proyecto__container:hover .poryecto__content {
     transform: translateY(18%);
     transition: all 0.8s;
+  }
+  .main__cta iframe{
+    width: 100%;
+  }
+  .main__cta{
+    width: 80%;
+    margin: auto;
+  }
+  .form__contactame{
+    width: 80%;
+    margin:20px auto;
+   
+  }
+  .proyectos .pro__contactame{
+    width: 50%;
+    background-color: #ff0066;
+  }
+  .pro__contactame {
+    background-color: var(--color-dark);
+    width: 100%;
+    padding: 12px;
   }
 }

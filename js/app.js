@@ -26,3 +26,9 @@ window.onload = function(){
 };
 
 
+sueldos=[50000,60000,70000,80000]
+for(i=0; i<=0; i++){
+    sueldos[i]=sueldos[i]+5000
+}
+console.log(sueldos);
+

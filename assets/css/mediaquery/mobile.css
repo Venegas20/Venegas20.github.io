@@ -240,7 +240,14 @@
     transform: translateY(10%);
     transition: all 0.8s;
   }
-  .form__contactame {
+ /* ====CONTACTAME===== */
+ .main__cta iframe{
+  width: 100%;
+}
+.main__cta{
+  margin: 15px;
+}
+   .form__contactame {
     width: 90%;
     padding: 12px;
   }

@@ -1,54 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- font-Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<style>
-    .girar{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 50%;
-        margin: auto;
-        background-color: blueviolet;
-        
-    }
-    .brans{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        border: 1px solid #ffff;
-        border-radius: 100%;
-        padding: 10px;
-        width: 50px ;
-        height: 50px;
-    }
-    i{
-        font-size: 50px;
-    }
-</style>
 <body>
-    <div class="girar">
-        <div class="brans">
-            <i class=" fa-brands fa-html5"></i>
+    <!-- <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        .card__galery {
+            width: 350px;
+            margin: 100px auto;
+            border: 10px 0;
+            /* box-shadow: 1px 1px  10px  5px #207561 ; */
+
+        }
+
+        .card__img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card__item {
+            background-color: rgb(5, 184, 142);
+            font-family: "Arial";
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+            color: rgb(109, 2, 109);
+        }
+
+        .card__title {
+            display: block;
+            text-align: center;
+            padding: 5px 0;
+            border-style: dotted;
+        }
+
+        .card__parrafo {
+            padding: 10px 0;
+            color: antiquewhite;
+            text-align: justify;
+        }
+
+        .card__button {
+            display: block;
+            width: 70%;
+            padding: 10px;
+            margin: auto;
+            border-radius: 10px;
+            /* outline: none; */
+            border: none;
+            color: antiquewhite;
+            background-color: rgb(25, 99, 82);
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    </style>
+    <article class="card__galery">
+        <img class="card__img" src="https://i.pinimg.com/736x/2b/ee/66/2bee660fcfdcc407bd3e29b01cc5e1a3.jpg" alt="">
+        <div class="card__item">
+            <h1 class="card__title">TANJIRO KAMADO</h1>
+            <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio reiciendis nemo
+                quasi odio nisi fuga
+                eveniet quia asperiores, sint illo provident minus consectetur, eos impedit incidunt tempore sapiente
+                ducimus aliquid!</p>
+            <button class="card__button">Cards</button>
         </div>
-        <div class="brans">
-            <i class=" fa-brands fa-css3-alt"></i>
-        </div>
-        <div class="brans">
-            <i class=" fa-brands fa-js"></i>
-        </div>
-        <div class="brans">
-            <i class=" fa-brands fa-bootstrap"></i>
-        </div>
-    </div>
+    </article> -->
+    <style>
+        :root {
+            --red: #f00; 
+            --black: #000; 
+            --cafe: #974807;
+            --hueso: #fac090; 
+            --azul: #0070c0; 
+            --amarillo: #ffff00;
+
+
+        }
+
+        .mario {
+            margin: 80px 150px;
+            width: 20px;
+            font-size: 20px;
+            height: 20px;
+            background-color: #f00;
+
+            box-shadow: 
+            /* gorra primera fila */
+            1em 0 #f00,
+            2em 0 #f00,
+            3em 0 #f00,
+            4em 0 #f00,
+            5em 0 #f00,
+            /* segunda fila gorra */
+            -1em 1em #f00,
+            0em 1em #f00,1em 1em #f00,
+            2em 1em #f00,3em 1em #f00,
+            4em 1em #f00,5em 1em #f00,
+            6em 1em #f00,
+            7em 1em #f00,
+            8em 1em #f00,
+            /* cara primera linea */
+            -1em 2em #974807, 0em 2em #974807,
+            1em 2em #974807, 2em 2em #fac090,
+            3em 2em #fac090, 4em 2em #fac090,
+            5em 2em #000, 6em 2em #fac090,
+            /* cara segunda linea */
+            -2em 3em #974807, 0em 3em #974807,
+            -1em 3em #974807, 2em 3em #fac090,
+            1em 3em #974807, 2em 3em #fac090,
+            3em 3em #fac090, 6em 3em #fac090,
+            5em 3em #000, 8em 3em #fac090,
+            7em 3em #000, 6em 2em #fac090
+           
+            
+           
+            
+            
+            
+            ;
+
+        }
+    </style>
+
+
+    <div class="mario"></div>
+
 </body>
+
 </html>
