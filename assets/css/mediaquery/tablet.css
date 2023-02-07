@@ -130,51 +130,7 @@
     padding: 10px;
     border-radius: 0.5rem;
   }
-  .info__habilidades,
-  .habilidades__responsive {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    box-shadow: 2px 2px 2px #b9b8b8, -2px -2px 4px #b9b8b8;
-    padding: 15px 0;
-    margin: 20px 0;
-    border-radius: 0.5rem;
-  }
-  .habilidades__item {
-    border-left: 4px solid var(--color-principal);
-    border-right: 1px solid var(--color-dark);
-    border-radius: 0.3rem;
-  }
-  .habilidades__item i,
-  .habilidades__responsive i {
-    font-size: 2rem;
-    padding: 10px;
-  }
-  .proyectos__item a {
-    display: flex;
-    align-items: center;
-    text-align: start;
-    margin: 5px 0;
-    text-decoration: none;
-    color: var(--color-dark);
-    font-weight: 700;
-  }
-  .proyectos__item {
-    display: block;
-  }
-  .proyectos__item a i {
-    color: var(--menu);
-  }
-  .proyectos__item a i:hover {
-    color: var(--color-dark);
-    transition: all 0.3s;
-  }
-  .proyectos__item a:hover {
-    color: var(--color-principal);
-    transition: all 0.3s; 
-  }
+
   /* ============ PROYECTOS =========== */
 
   .proyectos {
@@ -197,19 +153,18 @@
     transform: translateY(18%);
     transition: all 0.8s;
   }
-  .main__cta iframe{
+  .main__cta iframe {
     width: 100%;
   }
-  .main__cta{
+  .main__cta {
     width: 80%;
     margin: auto;
   }
-  .form__contactame{
+  .form__contactame {
     width: 80%;
-    margin:20px auto;
-   
+    margin: 20px auto;
   }
-  .proyectos .pro__contactame{
+  .proyectos .pro__contactame {
     width: 50%;
     background-color: #ff0066;
   }

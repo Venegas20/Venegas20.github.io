@@ -204,29 +204,11 @@
   font-family: var(--fontTitulos);
   font-weight: bold;
   text-align: center;
+  font-size: 2rem;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 2px #ff0066;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 18ch;
-  animation: tipear 2s steps(18), caminar 0.5s step-end alternate;
-  /* text-decoration: underline var(--color-dark); */
-  overflow: hidden;
-  margin: auto;
 }
-@keyframes tipear {
-  from {
-    width: 0;
-  }
-}
-@keyframes caminar {
-  50% {
-    border: transparent;
-  }
-  100% {
-    border-right: red;
-  }
-}
+
 .header__detalles {
   text-align: center;
   white-space: nowrap;
@@ -307,6 +289,49 @@
   font-weight: bolder;
   font-size: 25px;
   color: var(--menu);
+}
+.info__habilidades,
+.habilidades__responsive {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-shadow: 2px 2px 2px #b9b8b8, -2px -2px 4px #b9b8b8;
+  padding: 20px 0;
+  margin: 20px 0;
+  border-radius: 0.5rem;
+}
+.habilidades__item {
+  border-left: 5px solid var(--color-principal);
+  border-right: 2px solid var(--color-dark);
+  border-radius: 0.3rem;
+  
+}
+
+.responsive-item {
+  border-left: 5px solid var(--color-dark);
+  border-right: 2px solid var(--color-principal);
+  border-radius: 0.5rem;
+  padding: 10px 20px;
+  
+}
+.habilidades__item:hover {
+  border-left: 5px solid var(--color-dark);
+  border-right: 2px solid var(--color-principal);
+  border-radius: 0.3rem;
+  transition: ease 0.5s;
+}
+.responsive-item:hover {
+  border-left: 5px solid var(--color-principal);
+  border-right: 2px solid var(--color-dark);
+  border-radius: 0.5rem;
+  transition: ease 0.5s;
+}
+.habilidades__item i,
+.habilidades__responsive i {
+  font-size: 2.5rem;
+  padding: 10px;
 }
 /* ============ REDES SOLCIALES=========== */
 
@@ -512,7 +537,7 @@
   color: var(--color-principal);
   position: absolute;
   font-size: 1.6rem;
-  text-shadow: 1px 1px 25px  var(--color-principal);
+  text-shadow: 1px 1px 25px var(--color-principal);
 }
 .proyecto__container:hover::before {
   opacity: 0;
@@ -595,15 +620,14 @@
   margin: 5px 0;
 }
 /* ===CONTACTAME=== */
-.main__contactame{
- background-color: var(--color-white);
+.main__contactame {
+  background-color: var(--color-white);
 }
 .pro__contactame {
   background-color: var(--color-dark);
   padding: 40px 0;
   font-family: var(--fontText);
   text-align: center;
-  
 }
 
 .pro__contactame a {
@@ -624,7 +648,6 @@
   border-radius: 10px;
   outline: thick double #00ff77;
   padding: 20px;
- 
 }
 .form__item {
   margin: 20px 0;
@@ -655,11 +678,10 @@ textarea {
   color: var(--color-dark);
   font-family: "Arial";
 }
-.form__buttom{
- margin: 20px 0;
-
+.form__buttom {
+  margin: 20px 0;
 }
-.btn__enviar{
+.btn__enviar {
   background-color: transparent;
   color: var(--color-white);
   font-size: 1.2rem;
@@ -694,8 +716,9 @@ textarea {
   transition: 0.5s;
 }
 
-.btn__enviar:hover::before, .btn__enviar:hover::after {
-  transform: scale(0)
+.btn__enviar:hover::before,
+.btn__enviar:hover::after {
+  transform: scale(0);
 }
 
 .btn__enviar:hover {
@@ -707,14 +730,13 @@ textarea {
   font-size: 2.5rem;
   font-family: var(--fontTitulos);
 }
-.form__cta  {
-text-align: center;
-margin: 40px;
-padding: 20px;
-border: 1px solid #00ff77;
-border-bottom: 7px solid #00ff77;
-border-radius: 5px;
-
+.form__cta {
+  text-align: center;
+  margin: 40px;
+  padding: 20px;
+  border: 1px solid #00ff77;
+  border-bottom: 7px solid #00ff77;
+  border-radius: 5px;
 }
 .form__cta a {
   text-decoration: none;
@@ -723,13 +745,13 @@ border-radius: 5px;
   font-size: 1.8rem;
   font-weight: bold;
 }
-.form__cta .parrafo{
+.form__cta .parrafo {
   font-size: 1.4rem;
   padding: 20px 0;
   font-weight: 600;
   color: var(--color-white);
 }
-.form__cta .p__pro{
+.form__cta .p__pro {
   color: var(--color-principal);
   font-weight: bolder;
   font-size: 1.6rem;

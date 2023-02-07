@@ -28,13 +28,13 @@
     color: var(--color-white);
     font-size: 1.4rem;
     text-transform: capitalize;
-    
-      }
+    transition: all 0.5s;
+    border-bottom: 2px solid transparent;
+  }
   .nav__collapse .nav__content .nav__links a:hover {
     color: var(--color-principal);
-    transition: all 0.5s;
-    text-decoration: underline;
-    /* border-bottom: 2px solid var(--color-white); */
+    /* text-decoration: underline; */
+    border-bottom: 2px solid var(--color-white);
   }
 
   /*  =============================  */
@@ -136,48 +136,7 @@
     padding: 20px;
     border-radius: 0.5rem;
   }
-  .info__habilidades,
-  .habilidades__responsive {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    box-shadow: 2px 2px 2px #b9b8b8, -2px -2px 4px #b9b8b8;
-    padding: 20px 0;
-    margin: 20px 0;
-    border-radius: 0.5rem;
-  }
-  .habilidades__item {
-    border-left: 5px solid var(--color-principal);
-    border-right: 2px solid var(--color-dark);
-    border-radius: 0.3rem;
-  }
-
-  .responsive-item {
-    border-left: 5px solid var(--color-white);
-    border-right: 2px solid var(--color-principal);
-    border-radius: 0.5rem;
-    padding: 10px 20px;
-  }
-  .habilidades__item:hover {
-    border-left: 5px solid var(--color-dark);
-    border-right: 2px solid var(--color-principal);
-    border-radius: 0.3rem;
-    transition: ease 0.5s;
-  }
-  .responsive-item:hover {
-    border-left: 5px solid var(--color-dark);
-    border-right: 2px solid var(--color-principal);
-    border-radius: 0.3rem;
-    transition: ease 0.5s;
-  }
-  .habilidades__item i,
-  .habilidades__responsive i {
-    font-size: 2.5rem;
-    padding: 10px;
-  }
-  
+ 
 
   /* ============ PROYECTOS =========== */
 
@@ -193,9 +152,8 @@
     grid-template-rows: auto;
     gap: 12px;
     max-width: 1250px;
-    margin: 20px auto ;
-    padding: 0 20px ;
-   
+    margin: 20px auto;
+    padding: 0 20px;
   }
   .proyecto__container:hover .poryecto__content {
     transform: translateY(15%);
@@ -208,12 +166,12 @@
     place-content: center;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
-    padding:  20px;
+    padding: 20px;
     background-color: var(--color-white);
     /* width: 90%; */
     /* margin: 20px auto; */
   }
-  .form__contactame{
+  .form__contactame {
     width: 90%;
   }
   .main__cta iframe {
@@ -225,6 +183,5 @@
     padding: 40px 0;
     font-family: var(--fontText);
     text-align: center;
-   
   }
 }
