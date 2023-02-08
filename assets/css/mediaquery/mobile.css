@@ -183,8 +183,7 @@
     margin: 20px 0;
     border-radius: 0.5rem;
   }
- 
-  
+
   /* ============ PROYECTOS =========== */
 
   .proyectos {
@@ -208,14 +207,22 @@
     transform: translateY(10%);
     transition: all 0.8s;
   }
- /* ====CONTACTAME===== */
- .main__cta iframe{
-  width: 100%;
-}
-.main__cta{
-  margin: 15px;
-}
-   .form__contactame {
+  .header__title .title {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+  }
+  .form__cta {
+        width: 90%;
+  }
+  /* ====CONTACTAME===== */
+  .main__cta iframe {
+    width: 100%;
+  }
+  .main__cta {
+    margin: 15px;
+  }
+  .form__contactame {
     width: 90%;
     padding: 12px;
   }
