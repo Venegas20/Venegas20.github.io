@@ -77,14 +77,14 @@
                 ducimus aliquid!</p>
             <button class="card__button">Cards</button>
         </div>
-    </article> -->
+    </article>
     <style>
         :root {
-            --red: #f00; 
-            --black: #000; 
+            --red: #f00;
+            --black: #000;
             --cafe: #974807;
-            --hueso: #fac090; 
-            --azul: #0070c0; 
+            --hueso: #fac090;
+            --azul: #0070c0;
             --amarillo: #ffff00;
 
 
@@ -97,40 +97,33 @@
             height: 20px;
             background-color: #f00;
 
-            box-shadow: 
-            /* gorra primera fila */
-            1em 0 #f00,
-            2em 0 #f00,
-            3em 0 #f00,
-            4em 0 #f00,
-            5em 0 #f00,
-            /* segunda fila gorra */
-            -1em 1em #f00,
-            0em 1em #f00,1em 1em #f00,
-            2em 1em #f00,3em 1em #f00,
-            4em 1em #f00,5em 1em #f00,
-            6em 1em #f00,
-            7em 1em #f00,
-            8em 1em #f00,
-            /* cara primera linea */
-            -1em 2em #974807, 0em 2em #974807,
-            1em 2em #974807, 2em 2em #fac090,
-            3em 2em #fac090, 4em 2em #fac090,
-            5em 2em #000, 6em 2em #fac090,
-            /* cara segunda linea */
-            -2em 3em #974807, 0em 3em #974807,
-            -1em 3em #974807, 2em 3em #fac090,
-            1em 3em #974807, 2em 3em #fac090,
-            3em 3em #fac090, 6em 3em #fac090,
-            5em 3em #000, 8em 3em #fac090,
-            7em 3em #000, 6em 2em #fac090
-           
-            
-           
-            
-            
-            
-            ;
+            box-shadow:
+                /* gorra primera fila */
+                1em 0 #f00,
+                2em 0 #f00,
+                3em 0 #f00,
+                4em 0 #f00,
+                5em 0 #f00,
+                /* segunda fila gorra */
+                -1em 1em #f00,
+                0em 1em #f00, 1em 1em #f00,
+                2em 1em #f00, 3em 1em #f00,
+                4em 1em #f00, 5em 1em #f00,
+                6em 1em #f00,
+                7em 1em #f00,
+                8em 1em #f00,
+                /* cara primera linea */
+                -1em 2em #974807, 0em 2em #974807,
+                1em 2em #974807, 2em 2em #fac090,
+                3em 2em #fac090, 4em 2em #fac090,
+                5em 2em #000, 6em 2em #fac090,
+                /* cara segunda linea */
+                -2em 3em #974807, 0em 3em #974807,
+                -1em 3em #974807, 2em 3em #fac090,
+                1em 3em #974807, 2em 3em #fac090,
+                3em 3em #fac090, 6em 3em #fac090,
+                5em 3em #000, 8em 3em #fac090,
+                7em 3em #000, 6em 2em #fac090;
 
         }
     </style>
@@ -138,6 +131,170 @@
 
     <div class="mario"></div>
 
+    -->
+
+    <button id="click" class="btn__btn btn__button">hola mundo</button>
+    <button id="" class="btn__btn btn__success">&copy;</button>
+    <button id="" class="btn__btn btn__primary">&Delta;</button>
+    <button id="" class="btn__btn btn__pink">&LeftArrowRightArrow;</button>
+    <!-- <button class="btn__btn btn__button">hola mundo</button> -->
+<div class="triangulo"></div>
+   
+   
+   
+   
+   
+   
+   <style>
+        body {
+            display: grid;
+            place-items: center;
+            background-color: #000;
+            margin-top: 100px;
+        }
+.triangulo{
+    width: 0;
+    height: 0;
+    border-left: solid 50px #00ff00;
+    border-right: solid 50px #00ff00;
+    border-bottom: solid 50px #00ff00;
+}
+        .btn__btn {
+            display: block;
+            margin: 10px;
+            padding: 10px;
+            width: 10%;
+            font-family: "Oswald";
+            font-size: 1.2rem;
+            border-radius: 10px;
+            background-color: transparent;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.5s;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .btn__button {
+            border: 2px solid #8a2be2;
+        }
+
+        .btn__success {
+            border: 2px solid #00ff00;
+        }
+
+        .btn__primary {
+            border: 2px solid #00bfff;
+        }
+
+        .btn__pink {
+            border: 2px solid #ff00ff;
+        }
+
+        .btn__button::after,
+        .btn__success::after,
+        .btn__primary::after {
+            display: block;
+            content: "";
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            transition: all 0.5s;
+        }
+
+        .btn__pink::after {
+            display: block;
+            content: "";
+            position: absolute;
+            top: -1;
+            right: 0;
+            left: 0;
+            margin: auto;
+            transition: all 0.5s;
+        }
+
+        .btn__button::after {
+            width: 0%;
+            height: 100%;
+            background-color: #8a2be2;
+        }
+
+        .btn__success::after {
+            width: 0%;
+            height: 100%;
+            background-color: #00ff00;
+            transform: rotate(45deg);
+        }
+
+        .btn__primary::after {
+            transform: rotate(255deg);
+            width: 2px; 
+            opacity: 0;
+            background-color: #00bfff;
+         
+        }
+
+        .btn__pink::after {
+            bottom: -5px;
+            width: 5px;
+            height: 5px;
+            background-color: #ff00ff;
+            border-radius: 100%;
+        }
+
+        .btn__button:hover {
+            color: #000;
+            box-shadow: 4px 4px #ffffff, 8px 8px #a09f9f, 14px 14px 5px#7e7e7e;
+        }
+
+        .btn__success:hover {
+            color: #000;
+            box-shadow: 4px 4px #00CC00, 8px 8px #00FF66, 14px 14px 5px#7e7e7e;
+        }
+
+        .btn__primary:hover {
+            color: #000;
+            box-shadow: 4px 4px #33CCFF, 8px 8px #a0ffff, 14px 14px 5px#7e7e7e;
+        }
+
+        .btn__pink:hover {
+            color: #000;
+            box-shadow: 4px 4px #d100d1, 8px 8px #ff4aff, 14px 14px 5px#7e7e7e;
+        }
+
+        .btn__button:hover::after {
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /*  */
+        .btn__success:hover::after {
+            height: 200%;
+            width: 100%;
+            z-index: -1;
+            transition: all 0.5s;
+        }
+
+        /*  */
+        .btn__primary:hover::after {
+            transform: rotate(360deg);
+            background-color: #00bfff;
+            opacity: 1;
+            width: 200%;
+            z-index: -1;
+        }
+
+        .btn__pink:hover::after {
+            transform: scale(40);
+            border-radius: 100%;
+            z-index: -1;
+        }
+    </style>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="/js/sweet.js"></script>
 </body>
 
 </html>
