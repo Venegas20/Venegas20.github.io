@@ -15,11 +15,11 @@ miFormulario.addEventListener("submit", function (event) {
     event.preventDefault(); // evitar acción predeterminada
     // realizar acciones personalizadas aquí
     Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "venegas71abc@gmail.com",
-        Password: "BF71346BEB09CD72EE08231764AF9A14662B",
-        To: 'venegas71abc@gmail.com',
-        From: "venegas71abc@gmail.com",
+        Host: data.Host,
+        Username: data.Username,
+        Password: data.Password,
+        To: data.To,
+        From: data.From,
         Subject: `DATOS DE CONTACTO - [${nombre.value}]`,
         Body: `
     <h1>${nombre.value}</h1> 
@@ -37,7 +37,7 @@ miFormulario.addEventListener("submit", function (event) {
                     timer: 1500
                 })
                 console.log(message);
-               
+
             }
             else {
 
@@ -59,3 +59,6 @@ miFormulario.addEventListener("submit", function (event) {
 
 //     })
 // };
+
+
+
